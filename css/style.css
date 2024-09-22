@@ -1,0 +1,569 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: url('../imagens/001.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header h1, header p {
+  color: #ffffff;
+}
+
+header:hover .hero h1,
+header:hover .hero p {
+  opacity: 0.8;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+}
+
+nav li {
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #FCA311;
+  color: #FFFFFF;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  display: flex; /* Habilita o flexbox na div.hero */
+  flex-direction: column; /* Alinha os elementos em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100%; 
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.hero p {
+  font-size: 1.5em;
+  transition: opacity 0.3s ease;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 3;
+}
+
+/* Seção Sobre Mim */
+#sobre-mim {
+  background-color: #E5E5E5;
+  color: #14213D; 
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+#sobre-mim .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.sobre-mim-esquerda {
+  width: 55%;
+  padding: 20px;
+}
+
+.sobre-mim-direita {
+  width: 40%;
+  background-color: #FCA311;
+  color: #FFFFFF;
+  padding: 80px 40px 80px 40px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sobre-mim-direita .perfil-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+  margin-bottom: 30px;
+}
+
+/* Títulos da seção Sobre Mim com a cor #FCA311 */
+#sobre-mim h2,
+#sobre-mim h3 {
+  color: #FCA311;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Parágrafos da seção Sobre Mim */
+#sobre-mim p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sobre-mim-esquerda ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sobre-mim-esquerda li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #14213D;
+}
+
+.sobre-mim-direita h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sobre-mim-direita p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sobre-mim-direita .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sobre-mim-direita .social-icons a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.sobre-mim-direita .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.contato-botao {
+  background-color: transparent;
+  color: #14213d;
+  padding: 15px 30px;
+  border: 2px solid #14213D;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.contato-botao:hover {
+  background-color: #1413d1;
+  color: #ffffff
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.call-to-action h3 {
+  color: #14213D;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.call-to-action a {
+  display: inline-block;
+  background-color: #FCA311;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action a:hover {
+  background-color: #E5E5E5;
+}
+
+.call-to-action img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Seção "O que é Data Science?" */
+#o-que-e-data-science {
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#o-que-e-data-science .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+#o-que-e-data-science .secao-texto {
+  flex-basis: 45%;
+}
+
+#o-que-e-data-science .secao-imagem {
+  flex-basis: 45%;
+}
+
+#o-que-e-data-science h2 {
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#o-que-e-data-science h3 {
+  color: #FFFFFF;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#o-que-e-data-science p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#o-que-e-data-science img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Seção "Subáreas de Dados" */
+#subareas-de-dados {
+  background-color: #E5E5E5;
+  color: #000000;
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#subareas-de-dados .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+#subareas-de-dados .secao-texto {
+  flex-basis: 45%;
+}
+
+#subareas-de-dados .secao-imagem {
+  flex-basis: 45%;
+}
+
+#subareas-de-dados h2 {
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#subareas-de-dados h3 {
+  color: #000000;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#subareas-de-dados p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#subareas-de-dados img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Carreiras em Dados */
+#carreiras-em-dados {
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#carreiras-em-dados .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+#carreiras-em-dados h2 {
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#carreiras-em-dados h3 {
+  color: #FCA311;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#carreiras-em-dados p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#carreiras-em-dados img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Estilos para os links dos projetos na seção Sobre Mim */
+.sobre-mim-esquerda a { /* Seletor para links dentro de .sobre-mim-esquerda */
+  color: #FCA311; /* Cor do link: amarelo */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold;
+}
+
+.sobre-mim-esquerda a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.sobre-mim-esquerda ul {
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0;
+}
+
+.sobre-mim-esquerda li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #14213D; 
+  list-style-type: disc; /* Adiciona o marcador estilo bolinha preenchida */
+  padding-left: 30px; /* Adiciona um espaçamento à esquerda do marcador */
+}
+
+/* Seção "Começando na Data Science" */
+#comecando-na-data-science {
+  background-color: #E5E5E5; /* Fundo cinza claro */
+  color: #14213D; /* Cor do texto: azul escuro */
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#comecando-na-data-science .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#comecando-na-data-science h2, 
+#comecando-na-data-science h3 {
+  color: #FCA311; /* Cor do título e subtítulos: amarelo */
+  margin-bottom: 20px;
+}
+
+#comecando-na-data-science h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#comecando-na-data-science h3 {
+  font-size: 1.8em;
+}
+
+#comecando-na-data-science p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#comecando-na-data-science ul {
+  list-style: disc; /* Estilo do marcador da lista */
+  margin-left: 40px; /* Indentação da lista */
+  margin-bottom: 20px;
+}
+
+#comecando-na-data-science li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+#comecando-na-data-science img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+footer {
+  background-color: #14213D; /* Fundo azul escuro */
+  color: #FFFFFF;
+  padding: 60px 0; 
+  font-family: 'Roboto', sans-serif;
+}
+
+footer .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+footer h3 {
+  color: #FCA311; /* Título do glossário: amarelo */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+footer .glossario {
+  color: #E5E5E5; /* Cor do texto do glossário: cinza claro */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold;
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  position: relative; /* Posicionamento relativo para o tooltip */
+}
+
+footer .glossario::after { /* Estilo do tooltip */
+  content: attr(title); /* Conteúdo do tooltip é o atributo "title" */
+  background-color: #FCA311; /* Fundo do tooltip: amarelo */
+  color: #14213D; /* Cor do texto do tooltip: azul escuro */
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: calc(100% + 10px); /* Posição abaixo do termo */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Tooltip invisível por padrão */
+  visibility: hidden; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+footer .glossario:hover::after { /* Mostra o tooltip ao passar o mouse */
+  opacity: 1;
+  visibility: visible;
+}
+
+footer .social-media {
+  margin-top: 40px;
+}
+
+footer .social-media a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer .social-media img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Ícones redondos */
+}
+
+footer .desenvolvedor {
+  color: #E5E5E5; /* Cor do texto: cinza claro */
+  font-size: 0.9em;
+  margin-top: 60px;
+}

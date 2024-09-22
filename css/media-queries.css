@@ -1,0 +1,49 @@
+/* Media Query para tablets */
+@media (max-width: 768px) {
+    /* Estilos para telas com largura máxima de 768px (tablets) */
+  
+    #sobre-mim .container,
+    #o-que-e-data-science .container,
+    #subareas-de-dados .container,
+    #carreiras-em-dados .container,
+    #comecando-na-data-science .container {
+      flex-direction: column; /* Empilha os elementos em colunas */
+      gap: 30px; /* Ajusta o espaçamento entre os elementos */
+    }
+  
+    #sobre-mim .sobre-mim-esquerda,
+    #sobre-mim .sobre-mim-direita,
+    #o-que-e-data-science .secao-texto,
+    #o-que-e-data-science .secao-imagem,
+    #subareas-de-dados .secao-texto,
+    #subareas-de-dados .secao-imagem {
+      width: 100%; /* Ocupa toda a largura da tela */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Empilha os itens do menu em colunas */
+      gap: 10px; /* Ajusta o espaçamento entre os itens do menu */
+    }
+  
+    nav li {
+      margin-right: 0; /* Remove a margem direita */
+    }
+  }
+  
+  /* Media Query para celulares */
+  @media (max-width: 480px) {
+    /* Estilos para telas com largura máxima de 480px (celulares) */
+  
+    .hero h1 {
+      font-size: 3em; /* Diminui o tamanho do título */
+    }
+  
+    .hero p {
+      font-size: 1.2em; /* Diminui o tamanho do parágrafo */
+    }
+  
+    #sobre-mim .perfil-foto {
+      width: 200px; /* Diminui o tamanho da foto */
+      height: 200px;
+    }
+  }
